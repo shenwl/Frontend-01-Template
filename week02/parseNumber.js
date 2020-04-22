@@ -15,12 +15,7 @@ function parseNumber(source) {
     // 浮点数:  0\.｜\. + 0-9+
     const reg = /(0x[0-9|a-f]+)|(0o[0-7]+)|(0b[0-1]+)|([0-9][0-9]+)|([\\.|0\\.][0-9]+)/g;
     
-    // 第一位不能为0
-    // const reg = /(0x[1-9|a-f][0-9|a-f]+$)|(^0o[1-7][0-7]+$)|(^0b1[0-1]+$)(^[1-9][0-9]+$)(^[\\.|0\\.][0-9]+$)/;
-
-    const numbers = source.match(reg);
-
-    return numbers;
+    return source.match(reg);
 }
 
 module.exports = parseNumber;
