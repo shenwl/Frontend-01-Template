@@ -6,10 +6,10 @@
 
 ## 编程题
 1. 写一个正则表达式 匹配所有 Number 直接量
-- src/isNumber.js
+- src/parseNumber.js
 
 2. 写一个 UTF-8 Encoding 的函数
-- src/encoding.js
+- src/encodeUtf8.js
 
 3. 写一个正则表达式，匹配所有的字符串直接量，单引号和双引号
-- src/isString.js
+- src/parseString.js
